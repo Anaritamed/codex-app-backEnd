@@ -11,7 +11,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle } from 'ionicons/icons';
+import { homeOutline, listOutline, personCircleOutline } from 'ionicons/icons';
 import Home from './pages/Home';
 import Tarefas from './pages/Tarefas';
 import Perfil from './pages/Perfil';
@@ -42,7 +42,7 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route exact path="/homear">
+          <Route exact path="/home">
             <Home />
           </Route>
           <Route exact path="/tarefas">
@@ -57,16 +57,16 @@ const App: React.FC = () => (
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="home" href="/home">
-            <IonIcon aria-hidden="true" icon={triangle} />
-            <IonLabel>Tab 1</IonLabel>
+            <IonIcon aria-hidden="true" icon={homeOutline} />
+            <IonLabel>Home</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tarefas" href="/tarefas">
-            <IonIcon aria-hidden="true" icon={ellipse} />
-            <IonLabel>Tab 2</IonLabel>
+            <IonIcon aria-hidden="true" icon={listOutline} />
+            <IonLabel>Tarefas</IonLabel>
           </IonTabButton>
           <IonTabButton tab="perfil" href="/perfil">
-            <IonIcon aria-hidden="true" icon={square} />
-            <IonLabel>Tab 3</IonLabel>
+            <IonIcon aria-hidden="true" icon={personCircleOutline} />
+            <IonLabel>Perfil</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
