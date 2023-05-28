@@ -1,6 +1,5 @@
 import React from 'react';
-import { IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonHeader, IonItem, IonLabel, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -20,6 +19,26 @@ const Home: React.FC = () => {
           No diário, você pode organizar sua rotina e torna-se mais organizado(a), crie seu perfil e explore as funcionalidades do nosso app.
           </IonCardContent>
         </IonCard>
+        <IonItem button detail={false} routerLink='/perfil'>
+          <IonLabel>
+            <h3>Meu Perfil</h3>
+            <p>Visualize seu perfil ao final da página.</p>
+          </IonLabel>
+        </IonItem>
+
+        <IonItem button detail={false} routerLink='/perfil'>
+          <IonLabel>
+            <h3>Cadastre-se</h3>
+            <p>Crie um novo perfil pessoal e registre suas tarefas.</p>
+          </IonLabel>
+        </IonItem>
+
+        <IonItem button detail={false} routerLink='/tarefas'>
+          <IonLabel>
+            <h3>Organize-se</h3>
+            <p>Crie, exclua e edite suas tarefas de forma prática e fácil.</p>
+          </IonLabel>
+        </IonItem>
       </IonContent>
     </IonPage>
   );
