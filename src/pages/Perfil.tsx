@@ -1,7 +1,6 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Perfil.css';
+import '../style/Perfil.css';
 
 const Perfil: React.FC = () => {
   return (
@@ -12,12 +11,6 @@ const Perfil: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Perfil</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Perfil" />
       </IonContent>
     </IonPage>
   );

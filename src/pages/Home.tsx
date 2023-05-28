@@ -1,6 +1,5 @@
 import React from 'react';
 import { IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonHeader, IonItem, IonLabel, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import './Home.css';
 
 const Home: React.FC = () => {
   return (
@@ -16,7 +15,7 @@ const Home: React.FC = () => {
             <IonCardTitle>Diário</IonCardTitle>
           </IonCardHeader>
           <IonCardContent>
-          No diário, você pode organizar sua rotina e torna-se mais organizado(a), crie seu perfil e explore as funcionalidades do nosso app.
+          No diário, você pode organizar sua rotina e torna-se mais organizado(a). Crie seu perfil e explore as funcionalidades do nosso app.
           </IonCardContent>
         </IonCard>
         <IonItem button detail={false} routerLink='/perfil'>
