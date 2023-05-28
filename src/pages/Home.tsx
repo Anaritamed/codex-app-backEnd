@@ -15,20 +15,21 @@ const Home: React.FC = () => {
             <IonCardTitle>Diário</IonCardTitle>
           </IonCardHeader>
           <IonCardContent>
-          No diário, você pode organizar sua rotina e torna-se mais organizado(a). Crie seu perfil e explore as funcionalidades do nosso app.
+          No Diário, você pode organizar sua rotina e torna-se mais organizado(a). Crie seu perfil e explore as funcionalidades do nosso app.
           </IonCardContent>
         </IonCard>
-        <IonItem button detail={false} routerLink='/perfil'>
-          <IonLabel>
-            <h3>Meu Perfil</h3>
-            <p>Visualize seu perfil ao final da página.</p>
-          </IonLabel>
-        </IonItem>
 
         <IonItem button detail={false} routerLink='/perfil'>
           <IonLabel>
             <h3>Cadastre-se</h3>
             <p>Crie um novo perfil pessoal e registre suas tarefas.</p>
+          </IonLabel>
+        </IonItem>
+
+        <IonItem button detail={false} routerLink='/perfil'>
+          <IonLabel>
+            <h3>Meu Perfil</h3>
+            <p>Visualize seu perfil ao final da página.</p>
           </IonLabel>
         </IonItem>
 
